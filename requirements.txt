@@ -1,0 +1,9 @@
+scikit-learn==1.2.2
+keras
+nltk
+flask
+flask-cors
+pandas
+glob
+librosa
+joblib
