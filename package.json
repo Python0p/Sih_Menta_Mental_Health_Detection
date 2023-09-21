@@ -1,0 +1,16 @@
+{
+	"name": "fullstack-project",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+		"start:frontend": "cd frontend && npm start",
+		"start:backend": "cd backend && npm run dev",
+		"install:all": "npm run install:frontend && npm run install:backend",
+		"install:frontend": "cd frontend && npm install",
+		"install:backend": "cd backend && npm install"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.1"
+	}
+}
