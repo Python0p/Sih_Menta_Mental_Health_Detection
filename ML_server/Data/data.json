@@ -1,0 +1,21 @@
+{
+  "Age": 37,
+  "Gender":"female",
+  "Country": "United States",
+  "self_employed": "NA",
+  "family_history": "No",
+  "treatment": "Yes",
+  "work_interfere": "Often",
+  "no_employees": "100",
+  "remote_work": "No",
+  "tech_company": "Yes",
+  "anonymity": "Yes",
+  "leave": "Somewhat",
+  "mental_health_consequence": "No",
+  "phys_health_consequence":  "No",
+  "coworkers": "No",
+  "supervisor": "Yes",
+  "benefits": "Yes",
+  "seek_help": "Yes",
+  "care_options": "Yes"
+}
