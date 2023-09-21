@@ -1,3 +1,26 @@
+# ScreenShot for working Model
+## SignUP page
+![SignUp](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/46d80975-fc1a-40a9-a0a6-4109604c1327)
+
+## Login Page
+![Login](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/acfb9bcd-0694-4c32-99ad-4ac92a098910)
+
+## Home Page
+![HomePage](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/8311ff1a-cf5d-4bfc-9cd3-104eb86566b4)
+
+## AI ChatBot
+![AI_Chatbot](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/533bcc6c-53b3-427f-89af-126617a2df0b)
+
+## Form Page
+![Form](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/be164e74-b724-426d-85fd-f8fd405eabeb)
+
+## Emotional Analysis Page
+![EmotionAnalysis](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/2aa7327a-6ebc-4f97-9319-0b3a3aa034eb)
+
+## Predictions Page
+![Prediction](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/41d79b52-932d-4aee-8fb0-0e14dd807848)
+
+
 # Fullstack Project
 
 This repository contains a fullstack application with a React frontend and a Node.js backend using Sequelize.
@@ -119,28 +142,6 @@ npm start
 cd backend
 npm run dev
 ```
-
-# ScreenShot for working Model
-## SignUP page
-![SignUp](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/46d80975-fc1a-40a9-a0a6-4109604c1327)
-
-## Login Page
-![Login](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/acfb9bcd-0694-4c32-99ad-4ac92a098910)
-
-## Home Page
-![HomePage](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/8311ff1a-cf5d-4bfc-9cd3-104eb86566b4)
-
-## AI ChatBot
-![AI_Chatbot](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/533bcc6c-53b3-427f-89af-126617a2df0b)
-
-## Form Page
-![Form](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/be164e74-b724-426d-85fd-f8fd405eabeb)
-
-## Emotional Analysis Page
-![EmotionAnalysis](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/2aa7327a-6ebc-4f97-9319-0b3a3aa034eb)
-
-## Predictions Page
-![Prediction](https://github.com/Python0p/Sih_Menta_Mental_Health_Detection/assets/64919408/41d79b52-932d-4aee-8fb0-0e14dd807848)
 
 ## License
 
