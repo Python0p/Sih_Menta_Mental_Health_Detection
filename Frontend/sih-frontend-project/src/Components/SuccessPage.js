@@ -1,6 +1,7 @@
 import React from "react";
 import ParticleAnimation from "./ParticleAnimation";
 import { useNavigate, useLocation } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function SuccessPage() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function SuccessPage() {
 
   return (
     <>
+      <Navbar></Navbar>
       <div className="flex items-center justify-center flex-col min-h-screen bg-gray-700">
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <ParticleAnimation />

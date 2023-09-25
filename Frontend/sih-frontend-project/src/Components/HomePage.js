@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Navbar from "./Navbar";
 import caraosel1 from "../Images/caraousel-1.jpg";
 import caraosel2 from "../Images/caraousel-2.jpg";
 import caraosel3 from "../Images/caraousel-3.jpg";
@@ -18,6 +19,7 @@ function HomePage() {
 
   return (
     <>
+      <Navbar></Navbar>
       <div className="relative min-h-screen bg-gray-700">
         {/* Carousel */}
         <Carousel autoPlay infiniteLoop showThumbs={false}>
