@@ -1,86 +1,73 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Carousel } from "react-responsive-carousel";
+// import { useNavigate, useLocation } from "react-router-dom";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "./Navbar";
 import caraosel1 from "../Images/caraousel-1.jpg";
-import caraosel2 from "../Images/caraousel-2.jpg";
-import caraosel3 from "../Images/caraousel-3.jpg";
+// import caraosel2 from "../Images/caraousel-2.jpg";
+// import caraosel3 from "../Images/caraousel-3.jpg";
+import ThemeCard from "./ThemeCard";
 
 function HomePage() {
-  const location = useLocation();
-  const userid = location.state && location.state.userid;
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const userid = location.state && location.state.userid;
+  // const navigate = useNavigate();
 
-  const handleGetDiagnosed = () => {
-    // console.log("Button Clicked");
-    navigate("/health-form", { state: { userid: userid } });
-  };
+  // const handleGetDiagnosed = () => {
+  //   navigate("/health-form", { state: { userid: userid } });
+  // };
 
   return (
     <>
-      <Navbar></Navbar>
-      <div className="relative min-h-screen bg-gray-700">
-        {/* Carousel */}
-        <Carousel autoPlay infiniteLoop showThumbs={false}>
-          <div>
-            <img
-              src={caraosel1}
-              alt=""
-              style={{
-                width: "100%",
-                height: "645px",
-              }}
-            />
+      <Navbar />
+      <div className="min-h-screen bg-gray-700 text-white">
+        {/* Our services */}
+        <div>
+          <div className="mx-auto w-full flex justify-center">
+            <div className="relative max-w-fit inline-flex items-center justify-between box-border border-medium px-1 h-7 text-small rounded-full border-default bg-default-100 text-warning">
+              {/* <span className="flex-1 text-inherit font-normal px-2">
+                Our Services
+              </span> */}
+              <h2 className="text-3xl font-semibold mb-4 pt-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-700 flex justify-center">
+                OUR SERVICES
+              </h2>
+            </div>
           </div>
-          <div>
-            <img
-              src={caraosel2}
-              alt="I"
-              style={{
-                width: "100%",
-                height: "645px",
-              }}
+          <h1 className="font-bold text-center text-4xl bg-clip-text text-transparent bg-gradient-to-br from-custom-gradient-start to-custom-gradient-end mt-2 mb-24">
+            Try our services
+          </h1>
+          {/* <div className="flex justify-center gap-16 flex-wrap max-w-[800px]"> */}
+          <div className="flex justify-center gap-16 flex-wrap">
+            <ThemeCard
+              imageUrl={caraosel1}
+              themeName="Healthcare"
+              destinationUrl="/health-form"
             />
-          </div>
-          <div>
-            <img
-              src={caraosel3}
-              alt=""
-              style={{
-                width: "100%",
-                height: "645px",
-              }}
+            <ThemeCard
+              imageUrl={caraosel1}
+              themeName="Healthcare"
+              destinationUrl="/emotion-analysis"
             />
+            <ThemeCard
+              imageUrl={caraosel1}
+              themeName="Healthcare"
+              destinationUrl="/health-form"
+            />
+            <ThemeCard
+              imageUrl={caraosel1}
+              themeName="Healthcare"
+              destinationUrl="/emotion-analysis"
+            />
+            {/* Add more ThemeCard components with different themeName and imageUrl */}
           </div>
-        </Carousel>
-
-        {/* Buttons */}
-        <div className="mb-4 flex justify-evenly pt-10">
-          <button
-            type="button"
-            onClick={handleGetDiagnosed}
-            className="bg-gradient-to-r from-blue-500 to-purple-700 text-white py-2 px-4 rounded hover:bg-gradient-to-l from-blue-500 to-purple-700 focus:outline-none focus:bg-blue-600 mr-2"
-          >
-            Get Diagnosed
-          </button>
-          <button
-            type="button"
-            onClick={() => (window.location.href = "http://127.0.0.1:5000/")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-l from-blue-500 to-purple-700 text-white py-2 px-4 rounded hover:bg-gradient-to-r from-blue-500 to-purple-700 focus:outline-none focus:bg-red-600"
-          >
-            Try our AI chatbot
-          </button>
         </div>
 
         {/* Section: Mental Health Info */}
-        <div className="container mx-auto py-8">
+        <div className="container mx-auto py-8 text-slate-100">
           <h2 className="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-700 flex justify-center">
             Mental Health Information
           </h2>
-          <ul className="list-disc text-slate-100 pl-6">
+          <ul className="list-disc pl-6">
             <li>
               <strong>Self-Assessment Tools:</strong> Provide interactive
               self-assessment questionnaires or quizzes that users can complete
