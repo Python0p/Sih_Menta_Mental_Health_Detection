@@ -3,16 +3,30 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import { fas } from "@fortawesome/free-solid-svg-icons";
+// import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
+// import { faHatCowboy } from "@fortawesome/pro-thin-svg-icons";
+// import { faHatChef } from "@fortawesome/sharp-solid-svg-icons";
+// import { faPlateUtensils } from "@fortawesome/sharp-regular-svg-icons";
 
 import SignUpPage from "./Components/SignUp";
 import LoginPage from "./Components/LoginPage";
 import HealthForm from "./Components/Form.js";
 import SuccessPage from "./Components/SuccessPage";
-// import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import HomePage from "./Components/HomePage";
 import EmotionAnalysis from "./Components/EmotionAnalysis";
 import AdminPage from "./Components/AdminPage";
+
+// library.add(
+//   fas,
+//   faTwitter,
+//   faFontAwesome,
+//   faHatCowboy,
+//   faHatChef,
+//   faPlateUtensils
+// );
 
 function App() {
   const [predictionResult, setPredictioResult] = useState(null);

@@ -29,6 +29,7 @@ function ThemeCard({ imageUrl, themeName, destinationUrl }) {
                 inset: "0px",
                 color: "transparent",
                 cursor: "pointer",
+                borderRadius: "10px",
               }}
             />
           </button>
@@ -51,7 +52,11 @@ function ThemeCard({ imageUrl, themeName, destinationUrl }) {
           /> */}
         </div>
         <div className="p-3 h-auto flex items-center color-inherit subpixel-antialiased bg-background/10 backdrop-blur backdrop-saturate-150 max-w-[max-content] my-2 justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large top-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-          <p className="font-bold text-center text-white/80">{themeName}</p>
+          {/* <p className="font-bold text-center text-white/80">{themeName}</p> */}
+          <p className="font-bold text-center text-gray-900">{themeName}</p>
+          {/* <p className="font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-700"> */}
+          {/* {themeName} */}
+          {/* </p> */}
         </div>
       </div>
     </div>

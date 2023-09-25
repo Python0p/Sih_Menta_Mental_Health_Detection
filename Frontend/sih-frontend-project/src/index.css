@@ -15,3 +15,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* @media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar-icon {
+    display: block;
+  }
+}
+
+.navbar-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar-icon img {
+  width: 20px;
+  height: 20px;
+} */
