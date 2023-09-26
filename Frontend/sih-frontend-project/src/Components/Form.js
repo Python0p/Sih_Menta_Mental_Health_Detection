@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ParticleAnimation from "./ParticleAnimation";
 import axios from "axios";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
+import Header from "./Header";
 
 function HealthForm() {
   const location = useLocation();
@@ -62,7 +63,8 @@ function HealthForm() {
 
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
+      <Header></Header>
       <div className="relative min-h-screen bg-gray-700">
         {/* Particle Container */}
         <ParticleAnimation />

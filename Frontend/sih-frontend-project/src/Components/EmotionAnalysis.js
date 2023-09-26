@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ParticleAnimation from "./ParticleAnimation";
 import { useNavigate, useLocation } from "react-router-dom";
-import Navbar from "./Navbar";
+import Header from "./Header";
 
 function EmotionAnalysis() {
   const location = useLocation();
@@ -32,7 +32,7 @@ function EmotionAnalysis() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Header></Header>
 
       <div className="flex items-center justify-center min-h-screen bg-gray-700 pt-5 relative">
         <div className="container mx-auto px-4 pt-8 pb-8 z-10 flex flex-col lg:flex-row">
