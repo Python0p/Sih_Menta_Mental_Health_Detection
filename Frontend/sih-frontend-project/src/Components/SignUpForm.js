@@ -1,19 +1,22 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-function LoginForm() {
+function SignUpForm() {
   const navigate = useNavigate();
 
   const handleSubmitClick = () => {
-    navigate("/home");
-  };
-
-  const handleSignUpClick = () => {
     navigate("/");
   };
-
   return (
     <form>
+      <div className="mb-3">
+        <label className="font-medium mb-2 flex">Name</label>
+        <input
+          type="text"
+          placeholder="Enter your full name"
+          className="w-full border rounded-md bg-transparent border-gray-400 p-3"
+        />
+      </div>
       <div className="mb-3">
         <label className="font-medium mb-2 flex">Email</label>
         <input
@@ -30,32 +33,27 @@ function LoginForm() {
           className="w-full border rounded-md bg-transparent border-gray-400 p-3"
         />
       </div>
-      <div className="flex justify-between mb-6">
+      {/* <div className="flex justify-between mb-6">
         <label>
           <input type="checkbox" className="mr-2" />
           Remember me
         </label>
         <span className="text-blue-700 cursor-pointer">Forgot Password?</span>
-      </div>
+      </div> */}
       <button
         className="block bg-blue-700 hover:bg-blue-800 text-white w-full py-2 px-8 rounded"
         onClick={handleSubmitClick}
       >
-        Sign In
+        Sign Up
       </button>
       <div className="mt-4 text-center">
-        Don't have an account yet?{" "}
-        <Link to="/sign-up">
-          <span
-            className="text-blue-700 cursor-pointer"
-            onClick={handleSignUpClick}
-          >
-            Sign up
-          </span>
+        Already have an account?
+        <Link to="/">
+          <span className="text-blue-700 cursor-pointer">Sign In</span>
         </Link>
       </div>
     </form>
   );
 }
 
-export default LoginForm;
+export default SignUpForm;

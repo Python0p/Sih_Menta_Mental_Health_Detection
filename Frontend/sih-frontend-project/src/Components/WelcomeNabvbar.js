@@ -1,52 +1,42 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+// import React from "react";
+// import logo from "../Images/logo.png";
+
+// function WelcomeNavbar() {
+//   return (
+//     <nav
+//       className="bg-gray-800 p-2"
+//       style={{ position: "relative", zIndex: 99 }}
+//     >
+//       <div className="container mx-auto">
+//         <div className="flex justify-between items-center">
+//           <div className="text-white text-2xl font-semibold pt-1">
+//             <img
+//               src={logo}
+//               alt="Your Logo"
+//               className="w-22 h-16"
+//               style={{
+//                 cursor: "pointer",
+//               }}
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }
+
+// export default WelcomeNavbar;
+
 import React from "react";
-// import { Link } from "react-router-dom";
-import logo from "../Images/logo.png";
-
-function WelcomeNavbar() {
+import Logo from "./Logo";
+const header = () => {
   return (
-    <nav
-      className="bg-gray-800 p-2"
-      style={{ position: "relative", zIndex: 99 }}
-    >
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="text-white text-2xl font-semibold pt-1">
-            <img
-              src={logo}
-              alt="Your Logo"
-              className="w-22 h-16"
-              style={{
-                cursor: "pointer",
-              }}
-            />
-          </div>
-          {/* <ul className="flex space-x-4 pt-1">
-            <li>
-              <Link to="/home" className="text-white hover:underline">
-                Home
-              </Link>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul> */}
-        </div>
-      </div>
-    </nav>
+    <header className="bg-gray-800 z-[20] mx-auto flex flex-wrap w-full items-center justify-between border-b border-gray-500 p-5">
+      <Logo />
+      {/* <Nav /> */}
+    </header>
   );
-}
+};
 
-export default WelcomeNavbar;
+export default header;

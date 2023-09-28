@@ -139,7 +139,11 @@ function LoginPage() {
           <div className="grid lg:grid-cols-3 h-full">
             <div
               className="bg-blue-900 bg-cover lg:flex bg-no-repeat hidden "
-              style={{ backgroundImage: `url(${LoginBg}` }}
+              style={{
+                backgroundImage: `url(${LoginBg}`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             ></div>
             <div className="col-span-2 flex justify-center items-center">
               <div className="min-w-[450px] px-8">

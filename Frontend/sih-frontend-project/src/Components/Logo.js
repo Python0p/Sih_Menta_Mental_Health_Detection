@@ -7,7 +7,7 @@ const Logo = () => {
       <img
         src={logo}
         alt="Your Logo"
-        className="w-20 h-10"
+        className="w-22 h-16"
         style={{
           cursor: "pointer",
         }}
