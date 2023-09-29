@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+// import Button from "./Button";
 
 function SignUpForm() {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ function SignUpForm() {
       >
         Sign Up
       </button>
+      {/* <Button></Button> */}
       <div className="mt-4 text-center">
         Already have an account?
         <Link to="/">

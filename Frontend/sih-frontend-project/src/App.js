@@ -6,7 +6,7 @@ import SignUpPage from "./Components/SignUp";
 import LoginPage from "./Components/LoginPage";
 import HealthForm from "./Components/Form.js";
 import SuccessPage from "./Components/SuccessPage";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import HomePage from "./Components/HomePage";
 import EmotionAnalysis from "./Components/EmotionAnalysis";
 import AdminPage from "./Components/AdminPage";
@@ -43,7 +43,7 @@ function App() {
           element={<SuccessPage predictionResult={predictionResult} />}
         ></Route>
       </Routes>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 }

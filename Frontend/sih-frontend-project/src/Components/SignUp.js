@@ -156,39 +156,74 @@
 
 // export default SignUp;
 
+// import React from "react";
+// import WelcomeNavbar from "./WelcomeNabvbar";
+// import SignUpForm from "./SignUpForm";
+// import LoginBg from "../Images/LoginBg.jpg";
+
+// function SignUp() {
+//   return (
+//     <>
+//       <WelcomeNavbar></WelcomeNavbar>
+//       <div className="flex flex-col flex-auto w-full h-screen">
+//         <div className="h-full">
+//           <div className="grid lg:grid-cols-3 h-full">
+//             <div className="col-span-2 flex justify-center items-center">
+//               <div className="min-w-[450px] px-8">
+//                 <div className="mb-8">
+//                   <h1 className="text-3xl font-medium">Welcome to Menta</h1>
+//                   <p>Create an account!</p>
+//                 </div>
+//                 <SignUpForm />
+//               </div>
+//             </div>
+//             <div
+//               className="bg-blue-900 bg-cover lg:flex bg-no-repeat hidden "
+//               style={{
+//                 backgroundImage: `url(${LoginBg}`,
+//                 backgroundSize: "cover",
+//                 backgroundPosition: "center",
+//               }}
+//             ></div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default SignUp;
+
 import React from "react";
+// import WelcomeNavbar from "./WelcomeNavbar";
 import WelcomeNavbar from "./WelcomeNabvbar";
 import SignUpForm from "./SignUpForm";
 import LoginBg from "../Images/LoginBg.jpg";
 
 function SignUp() {
   return (
-    <>
-      <WelcomeNavbar></WelcomeNavbar>
-      <div className="flex flex-col flex-auto w-full h-screen">
-        <div className="h-full">
-          <div className="grid lg:grid-cols-3 h-full">
-            <div className="col-span-2 flex justify-center items-center">
-              <div className="min-w-[450px] px-8">
-                <div className="mb-8">
-                  <h1 className="text-3xl font-medium">Welcome to Menta</h1>
-                  <p>Create an account!</p>
-                </div>
-                <SignUpForm />
-              </div>
+    <div className="flex flex-col min-h-screen">
+      <WelcomeNavbar />
+      <div className="flex-1 grid lg:grid-cols-3">
+        <div className="col-span-2 flex justify-center items-center">
+          <div className="min-w-[450px] px-8">
+            <div className="mb-8">
+              <h1 className="text-3xl font-medium">Welcome to Menta</h1>
+              <p>Create an account!</p>
             </div>
-            <div
-              className="bg-blue-900 bg-cover lg:flex bg-no-repeat hidden "
-              style={{
-                backgroundImage: `url(${LoginBg}`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
+            <SignUpForm />
           </div>
         </div>
+        <div
+          className="bg-blue-900 bg-cover lg:flex bg-no-repeat hidden"
+          style={{
+            backgroundImage: `url(${LoginBg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
       </div>
-    </>
+    </div>
   );
 }
 

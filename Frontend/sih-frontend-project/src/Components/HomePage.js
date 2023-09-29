@@ -1,6 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from "./Header";
+// import Navbar from "./Navbar";
 import emotion from "../Images/Emotion.jpg";
 import chatbot from "../Images/chatbot.jpg";
 import blind from "../Images/blind.jpg";
