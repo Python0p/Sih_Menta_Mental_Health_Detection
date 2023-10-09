@@ -10,6 +10,8 @@ import SuccessPage from "./Components/SuccessPage";
 import HomePage from "./Components/HomePage";
 import EmotionAnalysis from "./Components/EmotionAnalysis";
 import AdminPage from "./Components/AdminPage";
+import AppointmentForm from "./Components/AppointmentForm";
+import HospitalMap from "./Components/HospitalMap";
 
 function App() {
   const [predictionResult, setPredictioResult] = useState(null);
@@ -42,6 +44,8 @@ function App() {
           path="/success"
           element={<SuccessPage predictionResult={predictionResult} />}
         ></Route>
+        <Route path="/appointment-form" element={<AppointmentForm />} />
+        <Route path="/hospital-map" element={<HospitalMap />} />
       </Routes>
       {/* <Footer></Footer> */}
     </>

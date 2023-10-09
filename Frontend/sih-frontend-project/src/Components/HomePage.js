@@ -5,6 +5,7 @@ import Header from "./Header";
 import emotion from "../Images/Emotion.jpg";
 import chatbot from "../Images/chatbot.jpg";
 import blind from "../Images/blind.jpg";
+import appointment from "../Images/appointment.png";
 import mentalHealth from "../Images/mentalHealth.jpg";
 import ThemeCard from "./ThemeCard";
 
@@ -21,6 +22,7 @@ function HomePage() {
       {/* <Navbar /> */}
       <Header />
       <div className="min-h-screen bg-gray-700 text-white">
+        {/* <div className="min-h-screen bg-white"> */}
         {/* Our services */}
         <div>
           <div className="mx-auto w-full flex justify-center">
@@ -52,12 +54,17 @@ function HomePage() {
               themeName="Chat Therapy"
               destinationUrl="/emotion-analysis"
             />
+            <ThemeCard
+              imageUrl={appointment}
+              themeName="Book Appointment"
+              destinationUrl="/emotion-analysis"
+            />
             {/* Add more ThemeCard components with different themeName and imageUrl */}
           </div>
         </div>
 
         {/* Section: Mental Health Info */}
-        <div className="container mx-auto py-8 text-slate-100">
+        <div className="container mx-auto py-8 text-white">
           <h2 className="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-700 flex justify-center">
             Mental Health Information
           </h2>
