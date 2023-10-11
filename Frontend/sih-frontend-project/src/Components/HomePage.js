@@ -5,7 +5,7 @@ import Header from "./Header";
 import emotion from "../Images/Emotion.jpg";
 import chatbot from "../Images/chatbot.jpg";
 import blind from "../Images/blind.jpg";
-import appointment from "../Images/appointment.png";
+import appointment from "../Images/DRappointment.png.jpg";
 import mentalHealth from "../Images/mentalHealth.jpg";
 import ThemeCard from "./ThemeCard";
 
@@ -52,12 +52,12 @@ function HomePage() {
             <ThemeCard
               imageUrl={chatbot}
               themeName="Chat Therapy"
-              destinationUrl="/emotion-analysis"
+              destinationUrl=""
             />
             <ThemeCard
               imageUrl={appointment}
               themeName="Book Appointment"
-              destinationUrl="/emotion-analysis"
+              destinationUrl="/hospital-map"
             />
             {/* Add more ThemeCard components with different themeName and imageUrl */}
           </div>
