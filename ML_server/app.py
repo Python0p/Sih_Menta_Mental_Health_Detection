@@ -19,7 +19,7 @@ app.config["CORS_HEADER"] = "Content-type"
 
 
 file_path = r"Data/dataset.csv"
-main_model = joblib.load(r'C:\Users\Tarundeep\Downloads\Mental_Health_Project-main\Mental_Health_Project-main\ML_server\model\stack_model.pkl')
+main_model = joblib.load(r'model/stack_model.pkl')
 
 
 # @app.route('/')
