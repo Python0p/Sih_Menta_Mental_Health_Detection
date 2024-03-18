@@ -11,7 +11,7 @@ function Footer() {
           }}
         >
           <span className="text-xl pr-2">&copy;</span>
-          TrekTheTech 2023
+          TrekTheTech 2024
         </div>
       </div>
     </footer>
